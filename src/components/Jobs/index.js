@@ -195,8 +195,7 @@ class Jobs extends Component {
   }
 
   render() {
-    const {searchInput, employeeType} = this.state
-    console.log(employeeType)
+    const {searchInput} = this.state
 
     return (
       <>
@@ -220,7 +219,6 @@ class Jobs extends Component {
                   placeholder="Search"
                   onChange={this.changeSearchInput}
                   onKeyDown={this.onEnterSearchInput}
-                  changeEmployeeList={this.changeEmployeeList}
                 />
                 <button
                   type="button"
